@@ -1,0 +1,118 @@
+/* review.css */
+.review-section {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .review-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .review-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .review-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .review-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .review-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .review-heading {
+      font-size: 1.5rem;
+    }
+  
+    .review-card {
+      padding: 1rem;
+    }
+  
+    .review-text {
+      font-size: 0.9rem;
+    }
+  
+    .student-name {
+      font-size: 1rem;
+    }
+  
+    .prev-btn,
+    .next-btn {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

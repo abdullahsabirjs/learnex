@@ -1,0 +1,272 @@
+.contact-section {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both divs have the same height */
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is well spaced */
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info-item img {
+  max-width: 20px;
+  height: auto;
+  align-self: center; /* Aligns the image vertically */
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the form is well spaced */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-form span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: green;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 1.5rem; /* Smaller heading size */
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem; /* Smaller subheading */
+  }
+
+  .contact-info p {
+    font-size: 0.85rem; /* Smaller paragraph text */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85rem; /* Smaller input text */
+    padding: 0.6rem; /* Smaller padding */
+  }
+
+  .contact-form button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.6rem; /* Smaller padding */
+  }
+
+  .info-item img {
+    max-width: 16px; /* Smaller image size */
+    height: auto;
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack the columns */
+    align-items: center; /* Center-align content */
+  }
+
+  .contact-info,
+  .contact-form {
+    margin-bottom: 1rem;
+    width: 90%; /* Make form and info sections take up 90% of the screen width */
+    max-width: 400px; /* Limit max width */
+  }
+
+  .contact-section {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 1.2rem; /* Even smaller heading size */
+  }
+
+  .contact-info h3 {
+    font-size: 1rem; /* Even smaller subheading */
+  }
+
+  .contact-info p {
+    font-size: 0.8rem; /* Even smaller paragraph text */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.8rem; /* Even smaller input text */
+    padding: 0.5rem; /* Even smaller padding */
+  }
+
+  .contact-form button {
+    font-size: 0.8rem; /* Even smaller button text */
+    padding: 0.5rem; /* Even smaller padding */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack the columns */
+    align-items: center; /* Center-align content */
+  }
+
+  .contact-info,
+  .contact-form {
+    margin-bottom: 1rem;
+    width: 90%; /* Make form and info sections take up 90% of the screen width */
+    max-width: 350px; /* Limit max width */
+  }
+}
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  font-size: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links li {
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: #020000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-bottom: 1rem;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-links li {
+    font-size: 0.8rem;
+  }
+}

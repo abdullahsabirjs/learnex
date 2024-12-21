@@ -1,0 +1,106 @@
+.programs-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  scroll-margin-top: 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.program-card {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.program-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+.program-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.program-card:hover .program-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.program-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem; 
+  }
+
+  .program-card {
+    height: 250px; 
+  }
+
+  .program-name {
+    font-size: 1.2rem; 
+  }
+
+  .program-description {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem; 
+  }
+
+  .program-card {
+    height: 200px; 
+  }
+
+  .program-name {
+    font-size: 1rem; 
+  }
+
+  .program-description {
+    font-size: 0.8rem;
+  }
+}

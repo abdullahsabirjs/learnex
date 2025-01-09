@@ -65,7 +65,7 @@ export default function Contact() {
       <footer className="footer">
   <div className="footer-container">
     <div className="footer-left">
-      <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      <p>&copy; 2024 LearnEx University. All Rights Reserved.</p>
     </div>
     <div className="footer-right">
       <ul className="footer-links">

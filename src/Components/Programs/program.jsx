@@ -42,6 +42,7 @@ const Program = () => {
             <h3 className="program-name">{program.name}</h3>
             <div className="program-details">
               <p className="program-description">{program.description}</p>
+              <button className="learn-more-btn">Learn More</button>
             </div>
           </div>
         ))}

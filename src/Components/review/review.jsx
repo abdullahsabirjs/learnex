@@ -55,12 +55,30 @@ const StudentReviewSection = () => {
           ))}
         </div>
         <div className="slider-controls">
-          <button className="prev-btn" onClick={prevReview}>
+          <button
+            className="prev-btn"
+            onClick={prevReview}
+            aria-label="Previous Review"
+          >
             ❮
           </button>
-          <button className="next-btn" onClick={nextReview}>
+          <button
+            className="next-btn"
+            onClick={nextReview}
+            aria-label="Next Review"
+          >
             ❯
           </button>
+        </div>
+        <div className="slider-indicators">
+          {reviews.map((_, index) => (
+            <span
+              key={index}
+              className={`indicator ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(index)}
+              aria-label={`Go to review ${index + 1}`}
+            ></span>
+          ))}
         </div>
       </div>
     </section>

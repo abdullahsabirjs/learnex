@@ -1,16 +1,22 @@
-nav {
-  background-color: white;
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
   padding: 15px 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
   position: sticky;
-  top: 0; 
+  top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
+
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo-link {
+  display: inline-block;
 }
 
 .logo {
@@ -23,7 +29,6 @@ nav {
   transform: scale(1.1);
 }
 
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -31,20 +36,32 @@ nav {
   gap: 25px;
   margin: 0;
   padding: 0;
-  flex-grow: 1; 
-  justify-content: flex-end; 
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: black;
+  color: #333333;
   font-weight: bold;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #00bcd4;
+  transform: scale(1.1);
+}
+
+.contact-us {
+  background-color: #00bcd4;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-us:hover {
+  background-color: #008c9e;
+  transform: scale(1.1);
 }
 
 .menu-toggle {
@@ -61,7 +78,7 @@ nav {
   }
 
   .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     gap: 15px;
     position: fixed;
@@ -73,6 +90,7 @@ nav {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    animation: slide-down 0.3s ease;
   }
 
   .nav-links.open {
@@ -80,6 +98,18 @@ nav {
   }
 
   .logo {
-    width: 60px; 
+    width: 80px;
+  }
+}
+
+/* Dropdown Animation */
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

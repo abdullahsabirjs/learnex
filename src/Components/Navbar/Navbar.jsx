@@ -14,9 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="navbar">
       <div className="navbar-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <a href="#home" className="logo-link">
+          <img src={logo} alt="Logo" className="logo" />
+        </a>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>

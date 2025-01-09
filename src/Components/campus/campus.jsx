@@ -15,16 +15,16 @@ const Campus = () => {
       
       <div className="gallery">
         <div className="gallery-item">
-          <img src={img1}alt='Campus1'/>
+          <img src={img1} alt="Aerial view of the university campus" loading="lazy" />
         </div>
         <div className="gallery-item">
-          <img src={img2} alt="Campus 2" />
+          <img src={img2} alt="Library view of the campus" loading="lazy" />
         </div>
         <div className="gallery-item">
-          <img src={img3} alt="Campus 3" />
+          <img src={img3} alt="Sports ground at the campus" loading="lazy" />
         </div>
         <div className="gallery-item">
-          <img src={img4} alt="Campus 4" />
+          <img src={img4} alt="Main building of the university" loading="lazy" />
         </div>
       </div>
 

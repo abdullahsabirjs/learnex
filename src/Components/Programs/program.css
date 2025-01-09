@@ -1,3 +1,4 @@
+/* Programs Section Styling */
 .programs-section {
   padding: 50px 20px;
   text-align: center;
@@ -11,12 +12,14 @@
   color: #333;
 }
 
+/* Programs Grid Layout */
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
+/* Program Card Styling */
 .program-card {
   position: relative;
   height: 350px;
@@ -33,7 +36,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Program Name Styling */
 .program-name {
   position: absolute;
   top: 20px;
@@ -44,6 +47,8 @@
   z-index: 2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+/* Program Details (Hover Content) */
 .program-details {
   position: absolute;
   bottom: 0;
@@ -62,42 +67,79 @@
   transform: translateY(0);
 }
 
-
+/* Program Description */
 .program-description {
   font-size: 1rem;
   line-height: 1.4;
 }
 
+/* Learn More Button */
+.learn-more-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.learn-more-btn:hover {
+  background-color: #008c9e;
+  transform: translateY(-2px);
+}
+
+.learn-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Animation for Card Entry */
+.program-card {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .section-title {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .program-card {
-    height: 250px; 
+    height: 250px;
   }
 
   .program-name {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .program-description {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .section-title {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .program-card {
-    height: 200px; 
+    height: 200px;
   }
 
   .program-name {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .program-description {

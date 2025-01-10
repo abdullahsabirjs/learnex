@@ -29,6 +29,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
 .program-card:hover {
@@ -95,10 +96,6 @@
 }
 
 /* Animation for Card Entry */
-.program-card {
-  animation: fadeInUp 0.8s ease-in-out;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;

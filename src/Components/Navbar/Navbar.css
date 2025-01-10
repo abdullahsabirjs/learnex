@@ -90,7 +90,6 @@
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    animation: slide-down 0.3s ease;
   }
 
   .nav-links.open {
@@ -98,18 +97,22 @@
   }
 
   .logo {
-    width: 80px;
+    width: 80px; /* Adjusted for responsiveness */
   }
 }
 
-/* Dropdown Animation */
-@keyframes slide-down {
+/* Optional Animation */
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translate(-50%, -60%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
+}
+
+.nav-links.open {
+  animation: fade-in 0.3s ease;
 }
